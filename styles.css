@@ -1,0 +1,99 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{font-family:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;line-height:1.6;color:#333;overflow-x:hidden}
+.container{max-width:75rem;margin:0 auto;padding:0 2.5rem}
+.header{background:#fff;padding:0.94rem 0;box-shadow:0 0.125rem 0.31rem rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}
+.header .container{display:flex;justify-content:space-between;align-items:center}
+.logo-icon{width:2.81rem;height:2.81rem;background:#000;border-radius:50%;position:relative}
+.logo-icon::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1.56rem;height:1.56rem;background:#fff;border-radius:50%}
+.nav{display:flex;gap:2.19rem;align-items:center}
+.nav a{text-decoration:none;color:#333;font-size:0.81rem;font-weight:500;transition:color .3s}
+.nav a:hover:not(.btn-primary){color:#5BCDDA}
+.btn-primary{background:#5BCDDA;color:#fff;border:none;padding:0.63rem 1.56rem;border-radius:1.25rem;font-size:0.75rem;font-weight:600;cursor:pointer;transition:all .3s;text-transform:uppercase;letter-spacing:0.03em}
+.btn-primary:hover{background:#4AB8C5;transform:translateY(-0.13rem);box-shadow:0 0.31rem 0.94rem rgba(91,205,218,.3)}
+.btn-hero{padding:0.75rem 2.19rem;font-size:0.81rem}
+.hero{position:relative;min-height:60vh;display:flex;align-items:center;background:linear-gradient(135deg,#9ED4DC 0%,#7AC5CF 100%)}
+.hero-bg{position:absolute;right:0;top:0;width:55%;height:100%;overflow:hidden;z-index:1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero .container{position:relative;z-index:2;padding:5rem 2.5rem}
+.hero-content{max-width:31.25rem}
+.hero h1{font-size:clamp(2rem,4vw,3.25rem);font-weight:800;line-height:1.1;margin-bottom:1.56rem;color:#fff;text-shadow:0.13rem 0.13rem 0.25rem rgba(0,0,0,.1)}
+.hero p{font-size:0.94rem;margin-bottom:1.88rem;color:#fff;line-height:1.6;max-width:25rem}
+.about,.support,.message,.children{background:#fff}
+.about{padding:4.38rem 0 3.75rem;text-align:center}
+.about h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;margin-bottom:0.94rem;line-height:1.4}
+.subtitle{font-size:0.94rem;color:#666;max-width:37.5rem;margin:0 auto}
+.rehabilitation,.children{padding:4.38rem 0}
+.rehabilitation{background:#FAFAFA}
+.content-block{display:flex;gap:5rem;align-items:center}
+.content-block.reverse{flex-direction:row-reverse}
+.text-content,.message-text,.children-image,.image-content,.newsletter-image,.newsletter-form{flex:1}
+.text-content h3{font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:700;margin-bottom:1.25rem;line-height:1.3;color:#222}
+.text-content p{font-size:0.88rem;line-height:1.9;color:#555;margin-bottom:1.56rem}
+.image-content{position:relative}
+.image-content img,.children-image img{width:100%;border-radius:0.5rem}
+.image-content img{box-shadow:0 0.5rem 1.56rem rgba(0,0,0,.1)}
+.message{padding:4.38rem 0}
+.message-content{display:flex;gap:3.75rem;align-items:center}
+.message-text p{font-size:1rem;line-height:1.8;color:#333}
+.support{padding:5rem 0;text-align:center}
+.support h2{font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:700;margin-bottom:1.25rem}
+.support-subtitle{font-size:0.94rem;color:#5BCDDA;margin-bottom:3.75rem;max-width:43.75rem;margin-left:auto;margin-right:auto}
+.goal{margin-bottom:3.13rem}
+.goal-text{font-size:1.13rem;margin-bottom:2.19rem;color:#333}
+.counter{display:flex;justify-content:center;align-items:center;gap:0.94rem;margin-bottom:3.13rem}
+.counter-segment{font-size:clamp(2rem,5vw,4.25rem);font-weight:300;color:#333;letter-spacing:0.13rem}
+.counter-divider{width:0.09rem;height:4.38rem;background:#5BCDDA}
+.contacts,.newsletter{background:#F5F5DC}
+.contacts{padding:4.38rem 0}
+.contacts-grid{display:grid;grid-template-columns:1fr 2fr;gap:6.25rem;align-items:center}
+.contacts-title h2{font-size:clamp(1.8rem,3.5vw,2.75rem);font-weight:700;color:#222}
+.contacts-info{display:flex;flex-direction:column;gap:2.81rem}
+.contact-item{display:flex;gap:1.25rem;align-items:flex-start}
+.icon{width:2.19rem;height:2.19rem;flex-shrink:0}
+.icon svg{width:100%;height:100%}
+.phone-icon svg{stroke:#333}
+.icon-group{display:flex;gap:0.75rem}
+.telegram-icon svg,.whatsapp-icon svg{fill:#333}
+.contact-item p{font-size:0.94rem;line-height:1.8;color:#333}
+.contact-item strong{font-weight:700;font-size:1.06rem}
+.newsletter{padding:0 0 4.38rem}
+.newsletter-content{background:#fff;border-radius:0.94rem;padding:3.75rem 4.38rem;display:flex;gap:4.38rem;align-items:center;box-shadow:0 0.31rem 1.25rem rgba(0,0,0,.05)}
+.newsletter-image{display:flex;justify-content:center}
+.envelope-illustration{position:relative;width:17.5rem;height:15rem}
+.envelope-back{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:100%;height:10rem;background:#FFD54F;border-radius:0.5rem}
+.envelope-back::before{content:'';position:absolute;top:-4.38rem;left:0;width:0;height:0;border-left:8.75rem solid transparent;border-right:8.75rem solid transparent;border-bottom:5rem solid #FFD54F}
+.envelope-paper{position:absolute;top:1.88rem;left:50%;transform:translateX(-50%);width:75%;height:55%;background:linear-gradient(135deg,#E3F2FD 0%,#BBDEFB 100%);border-radius:0.25rem;box-shadow:0 0.19rem 0.63rem rgba(0,0,0,.1)}
+.envelope-paper::before{content:'';position:absolute;top:1.25rem;left:1.25rem;right:1.25rem;height:0.19rem;background:rgba(0,0,0,.1);border-radius:0.13rem}
+.envelope-paper::after{content:'';position:absolute;top:2.19rem;left:1.25rem;right:1.25rem;height:0.13rem;background:rgba(0,0,0,.08);border-radius:0.13rem}
+.envelope-front{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:100%;height:5.31rem;background:#FDD835;clip-path:polygon(0 100%,50% 0,100% 100%)}
+.notification-badge{position:absolute;top:-0.63rem;right:1.56rem;background:#37474F;color:#fff;width:3rem;height:3rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.38rem;font-weight:700;box-shadow:0 0.19rem 0.63rem rgba(0,0,0,.2)}
+.newsletter-form h3{font-size:1.38rem;font-weight:700;margin-bottom:1.88rem;line-height:1.5;color:#222}
+.newsletter-form form{display:flex;flex-direction:column;gap:1.13rem}
+.newsletter-form input{padding:0.94rem 1.75rem;border:none;background:#F5F5DC;border-radius:1.38rem;font-size:0.94rem;font-family:inherit}
+.newsletter-form input:focus{outline:none;box-shadow:0 0 0 0.13rem #5BCDDA}
+.newsletter-form button{width:100%;padding:0.94rem}
+.footer{background:#2C2C2C;color:#fff;padding:1.56rem 0;text-align:center}
+.footer p{font-size:0.81rem;opacity:.8}
+@media(max-width:968px){
+.container{padding:0 1.25rem}
+.nav{display:none}
+.hero{min-height:50vh}
+.hero-bg{width:100%;opacity:.3}
+.hero h1{font-size:clamp(1.8rem,5vw,2.38rem)}
+.content-block,.content-block.reverse,.message-content,.newsletter-content{flex-direction:column}
+.content-block,.content-block.reverse,.message-content{gap:2.5rem}
+.contacts-grid{grid-template-columns:1fr;gap:2.5rem}
+.newsletter-content{padding:2.5rem 1.88rem;gap:2.5rem}
+.counter-segment{font-size:clamp(1.8rem,4vw,3rem)}
+.support h2{font-size:clamp(1.5rem,4vw,2rem)}
+.about h2{font-size:clamp(1.3rem,3vw,1.63rem)}
+.text-content h3{font-size:clamp(1.2rem,3vw,1.5rem)}
+}
+@media(max-width:640px){
+.hero h1{font-size:clamp(1.5rem,5vw,2rem)}
+.counter-segment{font-size:clamp(1.5rem,4vw,2.25rem)}
+.counter-divider{height:3.13rem}
+.contacts-title h2{font-size:clamp(1.5rem,4vw,2rem)}
+.newsletter-form h3{font-size:1.13rem}
+}
